@@ -1,9 +1,9 @@
-import { Profile } from './Profile';
+import { Profile } from './Profile/Profile';
 import user from '../assets/user.json';
-import { Statistics } from './Statistics';
+import { Statistics } from './statistics/Statistics';
 import data from '../assets/data.json';
 import friends from '../assets/friends.json';
-import { TransactionHistory } from './TransactionHistory';
+import { TransactionHistory } from './transaction/TransactionHistory';
 import transactions from '../assets/transactions.json';
 import { FriendsList } from './FriendList/FriendList';
 
