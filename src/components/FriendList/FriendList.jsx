@@ -1,5 +1,5 @@
 import s from './friend.module.css';
-
+import PropTypes from 'prop-types';
 export const FriendsList = ({ friends }) => {
   return (
     <div className={s.wrapper}>
@@ -28,4 +28,17 @@ export const FriendsList = ({ friends }) => {
       </section>
     </div>
   );
+};
+// PropTypes.arrayOf(PropTypes.shape({
+// avata
+// }))
+FriendsList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
 };
